@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MainSuite">
+  <test  thread-count="5" name="ChromeBrowser testing for TC">
+  <parameter name = "BrowserName" value="Chrome"></parameter>
+    <classes>
+     <class name="com.Project.TestClasses.TC01VerifyLoginFunctionnality"/>
+      <class name="com.Project.TestClasses.TC02VerifyLogoutFunctonaity"/>
+      <class name="com.Project.TestClasses.TC03VerifyBagADD2CartFunctionality"/> 
+      <class name="com.Project.TestClasses.TC04VerifyMultipleProductAdd2CartFunction"/>      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  thread-count="5" name="FirefoxBrowser testing for TC">
+  <parameter name = "BrowserName" value="Firefox"></parameter>
+    <classes>
+     <class name="com.Project.TestClasses.TC01VerifyLoginFunctionnality"/>
+      <class name="com.Project.TestClasses.TC02VerifyLogoutFunctonaity"/>
+      <class name="com.Project.TestClasses.TC03VerifyBagADD2CartFunctionality"/> 
+      <class name="com.Project.TestClasses.TC04VerifyMultipleProductAdd2CartFunction"/>      
+    </classes>
+  </test> <!-- Test -->
+  </suite> <!-- Suite -->
